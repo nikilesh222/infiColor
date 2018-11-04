@@ -1,26 +1,14 @@
-// document.getElementById("nextButton").addEventListener("click", Main);
 Main();
-
 function Main(inputIndexes) {
     var indexes = [ 1, 1, 1, 1, 1, 1];
     var limiter = 0;
-    // var test = inputIndexes.currentTarget.innerHtml
-    // console.log(inputIndexes);
-    if(inputIndexes != undefined){
-        // limiter = parseInt(inputIndexes.currentTarget.value);
-        // var number = 16777216;
-        // console.log(number.toString(16));
-        // indexes = inputIndexes;
-    }
     var stringText = "0123456789ABCDEF";
-    var upto = GetPossibilities(stringText, indexes, limiter);
-    document.getElementById('nextButton').value = upto;
+    GetPossibilities(stringText, indexes, limiter);
 }
 
 function GetPossibilities(text,indexes,limiter)
 {
     var reached = false;
-    var possibleStrings = [];
     var textArray = text;
     var dummy = '';
     var dummy1 = '';
@@ -40,7 +28,6 @@ function GetPossibilities(text,indexes,limiter)
         if (dummy.length > 5) {
             var parent = document.getElementById('parent');
             var newChild = '<div style="background-color:#'+dummy+';color:#'+dummy1+'"><span>#'+dummy+'</span></div>';
-            // var newChild = '<div style="background-color:#'+dummy+';color:#'+dummy1+'"></div>';
             parent.insertAdjacentHTML('beforeend', newChild);
             preIndexNum++;
         }
@@ -61,7 +48,6 @@ function GetNumberBasedOnTextLength(length, number)
         var digitsList = number;
         digitsList.reverse();
         var digitsArray = digitsList;
-        // var dummyIntList = new int[digitsArray.Length + 1];
         var dummyIntList = [];
         var dummyIntListLength = digitsArray.length + 1;
         for (var i = 0; i < digitsArray.length; i++)
