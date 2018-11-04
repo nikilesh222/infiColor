@@ -21,22 +21,22 @@ div.body{
 transform: scale(1.25) rotate(0deg) translateX(2px) translateY(2px) skewX(0deg) skewY(0deg);
 } */
 
-/*div.body div{
+div.body div{
     width: 100px;
     height: 100px;
     display: inline-block;
     border-radius: 10px;
     line-height: 100px;
     margin: 8px;
-}*/
-div.body div{
+}
+/* div.body div{
     width: 10px;
     height: 10px;
     display: inline-block;
-/*     border-radius: 10px; */
-/*     line-height: 100px; */
-/*     margin: 8px; */
-}
+    border-radius: 10px;
+    line-height: 100px;
+    margin: 8px;
+} */
 #c1{
     background-color: #000000;
 }

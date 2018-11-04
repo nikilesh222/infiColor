@@ -1,14 +1,14 @@
-document.getElementById("nextButton").addEventListener("click", Main);
+// document.getElementById("nextButton").addEventListener("click", Main);
 Main();
 
 function Main(inputIndexes) {
     var indexes = [ 1, 1, 1, 1, 1, 1];
     var limiter = 0;
     // var test = inputIndexes.currentTarget.innerHtml
-    console.log(inputIndexes);
+    // console.log(inputIndexes);
     if(inputIndexes != undefined){
         // limiter = parseInt(inputIndexes.currentTarget.value);
-        // var number = 16777216;dfsad
+        // var number = 16777216;
         // console.log(number.toString(16));
         // indexes = inputIndexes;
     }
@@ -39,8 +39,8 @@ function GetPossibilities(text,indexes,limiter)
         indexes = GetNumberBasedOnTextLength(textArray.length, indexes);
         if (dummy.length > 5) {
             var parent = document.getElementById('parent');
-            // var newChild = '<div style="background-color:#'+dummy+';color:#'+dummy1+'"><span>#'+dummy+'</span></div>';
-            var newChild = '<div style="background-color:#'+dummy+';color:#'+dummy1+'"></div>';
+            var newChild = '<div style="background-color:#'+dummy+';color:#'+dummy1+'"><span>#'+dummy+'</span></div>';
+            // var newChild = '<div style="background-color:#'+dummy+';color:#'+dummy1+'"></div>';
             parent.insertAdjacentHTML('beforeend', newChild);
             preIndexNum++;
         }
